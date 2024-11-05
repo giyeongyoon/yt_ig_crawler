@@ -17,7 +17,7 @@ ssl._create_default_https_context = ssl._create_unverified_context
 parser = argparse.ArgumentParser(description="Youtube crawler")
 
 parser.add_argument("--channel", type=str, help="Channel name")
-parser.add_argument("--key", type=str, default="AIzaSyDJnM-CJ3K_jW0ROyKdj0x92uWhvGc1IiU", help="Youtube API KEY")
+parser.add_argument("--key", type=str, help="Youtube API KEY")
 parser.add_argument("--filename", type=str, default="results.xlsx", help="File name to be saved")
 parser.add_argument("--max_results_long", type=int, default=10, help="Max number of long videos to be scrawled")
 parser.add_argument("--max_results_shorts", type=int, default=10, help="Max number of shorts to be scrawled")
